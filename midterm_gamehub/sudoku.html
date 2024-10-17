@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Sudoku</h1>
+    </header>
+    <section>
+        <div id="sudoku-board">
+            <h2>Easy (3x3)</h2>
+            <div id="easy-board" class="board-3x3"></div>
+            <button id="solveEasy">Solve Easy Sudoku</button>
+        </div>
+    </section>
+    <section>
+        <div id="sudoku-board">
+            <h2>Hard (9x9)</h2>
+            <div id="hard-board" class="board-9x9"></div>
+            <button id="solveHard">Solve Hard Sudoku</button>
+        </div>
+    </section>    
+    <script src="scripts/sudoku.js"></script>
+</body>
+</html>

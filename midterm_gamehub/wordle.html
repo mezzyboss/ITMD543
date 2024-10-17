@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Wordle</h1>
+    </header>
+    <main>
+        <div id="board"></div>
+        <div class="input-container">
+            <input type="text" id="guessInput" maxlength="5" autofocus>
+            <button id="submitGuess">
+                Guess 
+                <span class="arrow">&#10140;</span>
+            </button>
+        </div>
+        <div id="message"></div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
