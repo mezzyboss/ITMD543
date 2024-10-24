@@ -8,24 +8,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="title">Game Hub</h1>
-    </header>
-    <main>
+    <section class="header" role="banner">
+        <nav role="navigation">
+            <a id="logo" href="index.html"><img src="images/UChindy_new.png" alt="University logo"></a>
+            <div class="menu">
+                <ul>
+                    <li><a href="" aria-label="Home">HOME</a></li>
+                    <li><a href="#games" aria-label="Games">GAMES</a></li>
+                    <li><a href="" aria-label="Contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>#1 Gaming University</h1>
+            <p>All games are a subset of the most important one...the game of life</p>
+            <a href="" class="hero-btn" aria-label="Sign up">Sign Up</a>
+        </div>
+    </section>
+
+    <section class="location" role="region">
+        <h1>Our Locations</h1>
+        <p>Bigdubs University enrolls students from all over the world</p>
+        <div class="row">
+            <div class="location-col">
+                <img src="images/accra.png" alt="Accra location">
+                <div class="layer">
+                    <h3>ACCRA</h3>
+                </div>
+            </div>
+            <div class="location-col">
+                <img src="images/chicago.png" alt="Chicago location">
+                <div class="layer">
+                    <h3>CHICAGO</h3>
+                </div>
+            </div>
+            <div class="location-col">
+                <img src="images/lagos.png" alt="Lagos location">
+                <div class="layer">
+                    <h3>LAGOS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonials" role="region">
+        <h1>Testimonials</h1>
+        <input type="text" id="searchInput" placeholder="Search for testimonials..." aria-label="Search testimonials">
+        <div id="testimonialsList">
+            <div class="testimonial">
+                <p>"Bigdubs University changed my life! The gaming program is top-notch."</p>
+                <h3>- Alex from Accra</h3>
+            </div>
+            <div class="testimonial">
+                <p>"I never thought I could learn so much about game development. Amazing experience!"</p>
+                <h3>- Jamie from Chicago</h3>
+            </div>
+            <div class="testimonial">
+                <p>"The instructors are incredibly supportive and knowledgeable. Highly recommend!"</p>
+                <h3>- Casey from Lagos</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" role="region">
+        <h1>Try out these games</h1>
         <div class="game-tiles">
             <div class="tile">
-                <a href="wordle.html">
+                <a href="wordle.html" aria-label="Play Wordle">
                     <img src="images/wordle.png" alt="Wordle">
-                    <h2>Wordle Clone</h2>
+                    <h2>Wordle</h2>
                 </a>
             </div>
             <div class="tile">
-                <a href="sudoku.html">
+                <a href="sudoku.html" aria-label="Play Sudoku">
                     <img src="images/sudoku.png" alt="Sudoku">
                     <h2>Sudoku</h2>
                 </a>
             </div>
         </div>
-    </main>
+    </section>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
